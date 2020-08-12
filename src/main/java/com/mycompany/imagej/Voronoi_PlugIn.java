@@ -62,7 +62,7 @@ public class Voronoi_PlugIn implements PlugInFilter {
     	for(int u = 0; u < ip.getWidth(); u++) {
     		for(int v = 0; v < ip.getHeight(); v++) {
     			int[] rgb = ip.getPixel(u, v, null);
-    			if(rgb[0] == WHITE && rgb[1] != WHITE && rgb[2] != WHITE) {
+    			if(rgb[0] == WHITE && rgb[1] == BLACK && rgb[2] == BLACK) {
     				dataPoints.add(new DataPoint(u, v));
     			}
     		}
